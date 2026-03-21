@@ -6,6 +6,9 @@ public abstract class User
     private int id;
     protected String name;
     protected String surname;
-
-    protected UserType usertype;
+    protected User(string name, string surname)
+    {
+        this.name = name;
+        this.surname = surname;
+    }
 }

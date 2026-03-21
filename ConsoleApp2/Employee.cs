@@ -1,6 +1,9 @@
 ﻿namespace ConsoleApp2;
 
-public class Employee
+public class Employee : User
 {
-    
+    public Employee(string name, string surname) : base(name, surname)
+    {
+        
+    }
 }
