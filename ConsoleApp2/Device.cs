@@ -4,21 +4,21 @@ public abstract class Device
 {
     static int counter = 1;
     protected String name { get; set; }
-    protected bool status { get; set; }
+    protected bool status { get; set; } //dostepnosc
     protected int id { get; set; }
-    protected int producentID {get; set;}
+    protected int producerID {get; set;}
     protected float price { get; set; }
 
-    protected Device(string name, int producentId, float price)
+    protected Device(string name, int producerid, float price)
     {
         this.name = name;
-        producentID = producentId;
+        producerID = producerid;
         this.price = price;
-        status = false;
+        status = true;
         id = counter++;
     }
     
-    public void PrintAvailableDevices(Device[] devices)
+    public static void PrintAvailableDevices(List<Device> devices)
     {
         Console.WriteLine("Available devices:");
         foreach (Device device in devices)
@@ -26,5 +26,10 @@ public abstract class Device
             if (device.status)
                 Console.WriteLine(device);
             }
+    }
+
+    public override string ToString()
+    {
+        return "Device type " + GetType().Name + ", Name: " + name + ", ProducerID: " + producerID + ", : " + price;
     }
 }
