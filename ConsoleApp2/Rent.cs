@@ -2,6 +2,7 @@
 
 public class Rent
 {
+    private int PenaltyForDay = 100;
     static int count = 1;
     private int RenterID;//kto wypozyczyl
     private int RentTime;//Dni
@@ -10,10 +11,10 @@ public class Rent
     private DateTime RentDate;
     private DateTime ReturnDate;
 
-    public Rent(int renterId, int rentTime, int deviceId)
+    public Rent(int rentTime, int deviceId, User user)
     {
         RentDate = DateTime.Now;
-        RenterID = renterId;
+        RenterID = user.id;
         RentTime = rentTime;
         deviceID = deviceId;
         ReturnInTime = false;
@@ -24,10 +25,8 @@ public class Rent
         ReturnDate = DateTime.Now;
         int Days=(ReturnDate - RentDate).Days;
         ReturnInTime = (Days <= RentTime);
-        /*if (!ReturnInTime)
-        {
-            
-        }*/
+        if (!ReturnInTime)
+            ConsoleApp2.users[RenterID-1].AddPenalty(PenaltyForDay*(Days-RentTime));
     }
     
     
