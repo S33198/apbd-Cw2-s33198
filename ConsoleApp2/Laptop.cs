@@ -3,7 +3,13 @@
 public class Laptop : device
 {
     protected int RAM; //GB
-    protected String CPU;
-    protected double size; //inches
-    
+    protected string CPU;
+    protected double ScreenSize; //inches
+
+    public Laptop(string name, int producentID, float price,  int ram, string cpu, double screenSize) : base(name, producentID, price)
+    {
+        this.RAM = ram;
+        this.CPU = cpu;
+        this.ScreenSize = screenSize;
+    }
 }

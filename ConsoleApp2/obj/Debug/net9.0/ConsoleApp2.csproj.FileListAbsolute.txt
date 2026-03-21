@@ -12,3 +12,18 @@ C:\Users\s33198\RiderProjects\ConsoleApp2\ConsoleApp2\obj\Debug\net9.0\refint\Co
 C:\Users\s33198\RiderProjects\ConsoleApp2\ConsoleApp2\obj\Debug\net9.0\ConsoleApp2.pdb
 C:\Users\s33198\RiderProjects\ConsoleApp2\ConsoleApp2\obj\Debug\net9.0\ConsoleApp2.genruntimeconfig.cache
 C:\Users\s33198\RiderProjects\ConsoleApp2\ConsoleApp2\obj\Debug\net9.0\ref\ConsoleApp2.dll
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\obj\Debug\net9.0\ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\obj\Debug\net9.0\ConsoleApp2.AssemblyInfoInputs.cache
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\obj\Debug\net9.0\ConsoleApp2.AssemblyInfo.cs
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\obj\Debug\net9.0\ConsoleApp2.csproj.CoreCompileInputs.cache
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\obj\Debug\net9.0\ConsoleApp2.sourcelink.json
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\obj\Debug\net9.0\ConsoleApp2.dll
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\obj\Debug\net9.0\refint\ConsoleApp2.dll
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\obj\Debug\net9.0\ConsoleApp2.pdb
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\bin\Debug\net9.0\ConsoleApp2.exe
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\bin\Debug\net9.0\ConsoleApp2.deps.json
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\bin\Debug\net9.0\ConsoleApp2.runtimeconfig.json
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\bin\Debug\net9.0\ConsoleApp2.dll
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\bin\Debug\net9.0\ConsoleApp2.pdb
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\obj\Debug\net9.0\ConsoleApp2.genruntimeconfig.cache
+F:\Onedrive\OneDrive - Vertikal\Dokumenty\Moje\Studia PJATK\4 SEM\APBD\p1\apbd-Cw2-s33198\ConsoleApp2\obj\Debug\net9.0\ref\ConsoleApp2.dll
