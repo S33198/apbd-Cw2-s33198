@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApp2;
 
-public class Camera : device
+public class Camera : Device
 {
     protected int CameraLensSize; //mm
     protected int LensFocalLenght;

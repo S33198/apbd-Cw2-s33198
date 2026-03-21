@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApp2;
 
-public class Projector : device
+public class Projector : Device
 {
     protected int luminance { get; set; }
     protected string resolution { get; set; }

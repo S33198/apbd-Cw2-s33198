@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApp2;
 
-public class Laptop : device
+public class Laptop : Device
 {
     protected int RAM; //GB
     protected string CPU;
