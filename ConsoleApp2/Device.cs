@@ -36,4 +36,9 @@ public abstract class Device
     {
         status = false;
     }
+
+    public float GetPrice()
+    {
+        return price;
+    }
 }

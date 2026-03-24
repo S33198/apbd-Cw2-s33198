@@ -34,18 +34,40 @@ public class Rent
         Active = false;
     }
 
-    public void ShowRent(List<Rent> rents, User user)
+    public void ShowRentForUser(List<Rent> rents, User user)
     {
         foreach (Rent rent in rents)
         {
+            Console.WriteLine("Active rents for user: " + user.id);
             if(rent.Active && rent.RenterID == user.id)
                 Console.WriteLine(rent);
+        }
+    }
+
+    public void ShowDelayedRents(List<Rent> rents)
+    {
+        foreach (Rent rent in rents)
+        {
+            Console.WriteLine("Delayed rents ");
+            if (rent.IsDelayed())
+            {
+                Console.WriteLine(rent);
+            }
         }
     }
 
     public override string ToString()
     {
         return "RentID: " + RentID.ToString() + " DeviceID: " + deviceID.ToString() + " UserID: " + RenterID.ToString() + " Rent date: " + RentDate;
+    }
+    public bool GetStatus()
+    {
+        return Active;
+    }
+    
+    public bool IsDelayed()
+    {
+        return (DateTime.Now - RentDate).TotalDays > RentTime;
     }
     
 }
