@@ -11,6 +11,7 @@ public abstract class User
     {
         this.name = name;
         this.surname = surname;
+        Penalty = 0;
     }
 
     public void AddPenalty(int penalty)

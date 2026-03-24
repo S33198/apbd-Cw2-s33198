@@ -32,4 +32,8 @@ public abstract class Device
     {
         return "Device type " + GetType().Name + ", Name: " + name + ", ProducerID: " + producerID + ", : " + price;
     }
+    public void SetUnavailable()
+    {
+        status = false;
+    }
 }
