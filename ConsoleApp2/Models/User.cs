@@ -3,7 +3,7 @@
 public abstract class User
 {
     private int counter = 0;
-    public int Penalty {get; private set;}
+    public int Penalty {get; set;}
     public int id { get; }
     protected String name;
     protected String surname;
@@ -13,10 +13,8 @@ public abstract class User
         this.surname = surname;
         Penalty = 0;
     }
+    
+    
 
-    public void AddPenalty(int penalty)
-    {
-        this.Penalty += penalty;
-    }
     
 }
