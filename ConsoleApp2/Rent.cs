@@ -3,7 +3,7 @@
 public class Rent
 {
     private int RentID;
-    private int PenaltyForDay = 100;
+    
     static int count = 1;
     private int RenterID;//kto wypozyczyl
     private int RentTime;//Dni
@@ -15,6 +15,15 @@ public class Rent
 
     public Rent(int rentTime, int deviceId, User user)
     {
+        int RentsAmount = 0;
+        foreach (Rent rents in ConsoleApp2.rents)
+        {
+            if(rents.RenterID == user.id && rents.Active)
+                RentsAmount++;
+        }
+        if((RentsAmount > ConsoleApp2.RentsLimitForStudent && user.GetType() == typeof(Student)) || 
+           (RentsAmount > ConsoleApp2.RentsLimitForEmployee && user.GetType() == typeof(Employee)))
+            throw new Exception("Reached maximum amount of rents");
         RentID = count++;
         RentDate = DateTime.Now;
         RenterID = user.id;
@@ -22,6 +31,12 @@ public class Rent
         deviceID = deviceId;
         ReturnInTime = false;
         Active = true;
+        foreach(Device device in ConsoleApp2.devices)
+            if(device.GetID() == deviceID)
+                if(device.GetStatus())
+                    device.ChangeStatus();
+                else
+                    throw new Exception("Device is unavailable");
     }
 
     public void ReturnRent()
@@ -30,8 +45,11 @@ public class Rent
         int Days=(ReturnDate - RentDate).Days;
         ReturnInTime = (Days <= RentTime);
         if (!ReturnInTime)
-            ConsoleApp2.users[RenterID-1].AddPenalty(PenaltyForDay*(Days-RentTime));
+            ConsoleApp2.users[RenterID-1].AddPenalty(ConsoleApp2.PenaltyForDay*(Days-RentTime));
         Active = false;
+        foreach(Device device in ConsoleApp2.devices)
+            if(device.GetID() == deviceID)
+                    device.ChangeStatus();
     }
 
     public void ShowRentForUser(List<Rent> rents, User user)

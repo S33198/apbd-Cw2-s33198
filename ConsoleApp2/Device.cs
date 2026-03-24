@@ -41,4 +41,18 @@ public abstract class Device
     {
         return price;
     }
+
+    public int GetID()
+    {
+        return id;
+    }
+
+    public bool GetStatus()
+    {
+        return status;
+    }
+    public void ChangeStatus()
+    {
+        status = !status;
+    }
 }

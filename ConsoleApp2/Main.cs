@@ -7,6 +7,14 @@ public class ConsoleApp2
     public static List<User> users = new List<User>();
     public static List<Rent> rents = new List<Rent>();
     public static List<Device> devices = new List<Device>();
+
+    //bussiness rules
+    public static int RentsLimitForStudent=2;
+    public static int RentsLimitForEmployee = 5;
+    public static  int PenaltyForDay = 100;
+    
+    
+    
     public void Status()
     {
         int ActiveRents = 0;
