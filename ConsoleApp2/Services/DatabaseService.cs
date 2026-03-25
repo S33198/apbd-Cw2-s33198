@@ -4,7 +4,7 @@ namespace ConsoleApp2.Services;
 
 public class DatabaseService : IDatabaseService
 {
-    public void Status()
+    public static void Status()
     {
         int ActiveRents = 0;
         int DelayedRents = 0;

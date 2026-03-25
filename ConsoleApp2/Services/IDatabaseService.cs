@@ -2,5 +2,5 @@
 
 public interface IDatabaseService
 {
-    public void Status();
+    public static void Status(){}
 }
