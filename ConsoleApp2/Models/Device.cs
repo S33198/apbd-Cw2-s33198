@@ -24,4 +24,9 @@ public abstract class Device
         status = !status;
     }
     
+    public void MarkUnavailable()
+    {
+        status = false;
+    }
+    
 }
