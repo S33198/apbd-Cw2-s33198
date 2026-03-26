@@ -5,3 +5,16 @@
 target/
 build/
 out/
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.idea/
+Debug/
+Release/
+.NET
+.dll
+.exe
+.pdb
+.csproj.user
